@@ -48,7 +48,7 @@ Special Characters:
 
 ` make user press Z.
 
-# period
+Hash (shift + 3) period
 
 _ space.
 
