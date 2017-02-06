@@ -1,3 +1,5 @@
+#Welcome
+
 Welcome to SEXT (Super Editor of Extreme Text), a program to edit .msg files in Rose Vengeance, an RPG!
 
 
@@ -12,7 +14,7 @@ WRITTEN USING PROCESSING FROM PROCESSING.ORG
 
 
 
-Features:
+#Features:
 
 Real-time message previews.
 
@@ -28,7 +30,7 @@ Add, delete, or edit messages.
 
 
 
-Planned Features:
+#Planned Features:
 
 
 Export will prompt you where you want to save the file.
@@ -36,7 +38,7 @@ Export will prompt you where you want to save the file.
 
 
 
-Controls:
+#Controls:
 
 A and S: change message pages (if more than 20).
 D and F: change font pages (if more than 20).
@@ -44,7 +46,7 @@ D and F: change font pages (if more than 20).
 
 
 
-Special Characters:
+#Special Characters:
 
 ` make user press Z.
 
