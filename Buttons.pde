@@ -24,12 +24,12 @@ void ExportButton(float testx, float testy, float xwidth, float yheight) {
   fill(100); if (firstrun == false) {fill(250, 13, 13);}
   rect(testx, testy, xwidth, yheight);
   fill(0);
-  text("Export",testx+xwidth/2, testy+yheight/2);
+  text("Save As",testx+xwidth/2, testy+yheight/2);
   
   if (mouseX >= testx && mouseX <= testx+xwidth && mouseY >= testy && mouseY <= testy+yheight && firstrun == false) {
   //println("Hi");
 
-      if(mouse){Export(false); mouseX = 5; showInputDialog("Exported! Please navigate to this app's main directory to get your new .msg file!"); mouse = false;}
+      if(mouse){selectInput("Navigate to directory, and name .msg file to save.", "SaveAs"); mouseX = 5; mouse = false;}
       
   
   
@@ -93,10 +93,11 @@ void SaveButton(float testx, float testy, float xwidth, float yheight) {
       /*Export();*/ mouseX = 5; 
       if (File.equals("null")) {showInputDialog("You created a new message, so you can't save over a file...");} else {
     SaveQ = showInputDialog("This will save over the Message loaded. Are you sure you want to save? (Enter y for yes.)"); 
+    
       }
     mouse = false;}  
       
-      if (SaveQ.equals("y") || SaveQ.equals("Y")) {Export(true);}
+      if (SaveQ.equals("y") || SaveQ.equals("Y")) {Export(true); showInputDialog("Saved.");}
   
       } catch (NullPointerException e) {
         SaveQ = "n";

@@ -29,6 +29,11 @@ int allowedfontpagenumbers = 1;
 
 
 
+//Export path.
+String ExportPath = "Messages.msg";
+
+
+
 
 //Always True
 boolean PlayingMessage;
@@ -358,4 +363,36 @@ void fileSelected(File selection) {
     firstrun = false;
     
   }
+}
+
+
+
+
+
+void SaveAs(File selection) {
+
+
+if (selection == null) {
+    println("Window was closed or the user hit cancel.");
+    mouselock = false;
+
+
+
+} else {
+    println("User selected " + selection.getAbsolutePath());
+    //Load Msg File Into an actual map.
+    
+    //Load file.
+    ExportPath = selection.getAbsolutePath();
+    
+    //println(ExportPath);
+    Export(false);
+    
+    //println(allowedpagenumbers);
+    
+    //For sanity reasons.
+    mouselock = false;
+   
+ 
+}
 }

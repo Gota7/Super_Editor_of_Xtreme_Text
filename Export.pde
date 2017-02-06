@@ -9,7 +9,9 @@ if (OverWrite) {
   saveStrings(File, RawMessages);
 } else {
 
-  saveStrings("Messages.msg", RawMessages);
+   //println("Hi");
+  saveStrings(ExportPath, RawMessages);
+  File = ExportPath;
 
 }
 
